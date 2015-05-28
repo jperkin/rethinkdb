@@ -427,6 +427,7 @@ class TableMainView extends Backbone.View
         @$('.sharding').html @shard_distribution.render().el
 
         # Display the server assignments
+        console.log "parent causing a render" #RSI
         @$('.server-assignments').html @server_assignments.render().el
 
         # Display the secondary indexes
